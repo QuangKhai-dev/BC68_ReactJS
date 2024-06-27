@@ -1,3 +1,4 @@
+import BaiTapHienThiXe from "./components/BaiTap/BaiTapHienThiXe/BaiTapHienThiXe";
 import Content from "./components/Content";
 import DemoCss from "./components/DemoCss/DemoCss";
 import DemoUseState from "./components/DemoUseState/DemoUseState";
@@ -21,6 +22,7 @@ function App() {
       <DemoCss />
       <DemoOnclick /> */}
       <DemoUseState />
+      <BaiTapHienThiXe />
     </>
   );
 }
