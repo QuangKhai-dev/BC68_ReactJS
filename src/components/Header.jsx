@@ -10,23 +10,24 @@ const Header = () => {
 
   // };
   return (
-    <div>
-      <h2
-        id="demo"
-        // className={number > 6 ? "Tôi lớn hơn" : "Tôi nhỏ hơn"}
-        className={`bg-blue-500 p-3 ${
-          number > 6 ? "Tôi lớn hơn" : "Tôi nhỏ hơn"
-        }`}
-        // style={mauSac}
-        // style={{
-        //   backgroundColor: "red",
-        //   color: "white",
-        // }}
-      >
-        {hoTen}
-      </h2>
-      {/* <input type="text" value={hoTen} /> */}
-    </div>
+    // <div>
+    //   <h2
+    //     id="demo"
+    //     // className={number > 6 ? "Tôi lớn hơn" : "Tôi nhỏ hơn"}
+    //     className={`bg-blue-500 p-3 ${
+    //       number > 6 ? "Tôi lớn hơn" : "Tôi nhỏ hơn"
+    //     }`}
+    //     // style={mauSac}
+    //     // style={{
+    //     //   backgroundColor: "red",
+    //     //   color: "white",
+    //     // }}
+    //   >
+    //     {hoTen}
+    //   </h2>
+    //   {/* <input type="text" value={hoTen} /> */}
+    // </div>
+    <div></div>
   );
 };
 
