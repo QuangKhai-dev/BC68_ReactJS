@@ -24,6 +24,14 @@ const HomeTemplate = () => {
       content: "BT Hiển thị xe",
       to: path.baiTapHienThiXe,
     },
+    {
+      content: "Demo Redux",
+      to: "demo-redux",
+    },
+    {
+      content: "Demo Props",
+      to: "demo-props",
+    },
   ];
   return (
     <div>

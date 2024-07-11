@@ -14,6 +14,7 @@ import HomeTemplate from "./template/HomeTemplate/HomeTemplate";
 import NotFound from "./pages/NotFound/NotFound";
 import HomePage from "./pages/HomePage/HomePage";
 import { path } from "./common/path";
+import DemoRedux from "./components/DemoRedux/DemoRedux";
 function App() {
   let hoTen = "Minh Khánh";
   let routes = useRoutes([
@@ -36,6 +37,14 @@ function App() {
         {
           index: true,
           element: <HomePage />,
+        },
+        {
+          path: "demo-redux",
+          element: <DemoRedux />,
+        },
+        {
+          path: "demo-props",
+          element: <DemoProps />,
         },
       ],
     },

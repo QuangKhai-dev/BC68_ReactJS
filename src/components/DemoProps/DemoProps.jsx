@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DemoShoe from "./DemoShoe";
-
+import { useDispatch } from "react-redux";
+import { updateArrShoes } from "../../redux/xeHoiSlice";
 const DemoProps = () => {
   let [id, setId] = useState(0);
   let arrShoes = [
@@ -335,9 +336,18 @@ const DemoProps = () => {
     setId(id);
   }
   console.log(id);
+  const dispatch = useDispatch();
   return (
     <div className="container">
       <h2>Bài tập render danh sách giày Props</h2>
+      <button
+        onClick={() => {
+          dispatch(updateArrShoes(arrShoes));
+        }}
+        className="bg-green-700 text-white py-2 px-5 rounded-lg"
+      >
+        Chuyển dữ liệu arrShoes lưu trữ lên store
+      </button>
       <div className="grid grid-cols-4">
         {/* sử dụng vòng lặp để tạo item  */}
         {arrShoes.map((item, index) => {
