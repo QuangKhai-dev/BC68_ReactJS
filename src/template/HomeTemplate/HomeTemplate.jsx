@@ -32,6 +32,14 @@ const HomeTemplate = () => {
       content: "Demo Props",
       to: "demo-props",
     },
+    {
+      content: "Game lắc xí ngầu",
+      to: "bai-tap-lac-xi-ngau",
+    },
+    {
+      content: "Demo useEffect",
+      to: "demo-use-effect",
+    },
   ];
   return (
     <div>
@@ -79,13 +87,13 @@ const HomeTemplate = () => {
             <Outlet />
           </div>
         </Content>
-        <Footer
+        {/* <Footer
           style={{
             textAlign: "center",
           }}
         >
           Trang web này được thực hiện bởi Khải
-        </Footer>
+        </Footer> */}
       </Layout>
     </div>
   );

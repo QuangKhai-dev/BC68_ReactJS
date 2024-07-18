@@ -1,12 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import userSlice from "./userSlice";
 import xeHoiSlice from "./xeHoiSlice";
+import xiNgauSlice from "./xiNgauSlice";
 
 export const store = configureStore({
   reducer: {
     hoTen: () => "Quang Khai",
     userSlice,
     xeHoiSlice,
+    xiNgauSlice,
   },
 });
 

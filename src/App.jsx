@@ -15,6 +15,13 @@ import NotFound from "./pages/NotFound/NotFound";
 import HomePage from "./pages/HomePage/HomePage";
 import { path } from "./common/path";
 import DemoRedux from "./components/DemoRedux/DemoRedux";
+import BaiTapLacXiNgau from "./components/BaiTap/BaiTapLacXiNgau/BaiTapLacXiNgau";
+import DemoUseEffect from "./components/DemoUseEffect/DemoUseEffect";
+import DemoUseEffectDetail from "./components/DemoUseEffect/DemoUseEffectDetail";
+import React, { createContext } from "react";
+
+export let ContextHoTen = createContext(null);
+
 function App() {
   let hoTen = "Minh Khánh";
   let routes = useRoutes([
@@ -46,10 +53,30 @@ function App() {
           path: "demo-props",
           element: <DemoProps />,
         },
+        {
+          path: "bai-tap-lac-xi-ngau",
+          element: <BaiTapLacXiNgau />,
+        },
+        {
+          path: "demo-use-effect",
+          element: <DemoUseEffect />,
+        },
+        {
+          path: "demo-detail-use-effect/:id",
+          element: <DemoUseEffectDetail />,
+        },
       ],
     },
   ]);
-  return routes;
+  return (
+    <ContextHoTen.Provider
+      value={{
+        hoTen: "Quang Khải",
+      }}
+    >
+      {routes}
+    </ContextHoTen.Provider>
+  );
 }
 
 export default App;

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Pony;
+  src: url(./../../../assets/font/Pony.ttf);
+}
+
+.game_xi_ngau {
+  font-family: Pony;
+  background-image: url('./public/gameXiNgau/bgGame.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+}
