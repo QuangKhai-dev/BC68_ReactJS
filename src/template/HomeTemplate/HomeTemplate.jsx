@@ -40,6 +40,14 @@ const HomeTemplate = () => {
       content: "Demo useEffect",
       to: "demo-use-effect",
     },
+    {
+      content: "Demo UseSearchParam",
+      to: "demo-use-search-param",
+    },
+    {
+      content: "Demo UseRef",
+      to: "demo-use-ref",
+    },
   ];
   return (
     <div>

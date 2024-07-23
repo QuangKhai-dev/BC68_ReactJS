@@ -19,6 +19,10 @@ import BaiTapLacXiNgau from "./components/BaiTap/BaiTapLacXiNgau/BaiTapLacXiNgau
 import DemoUseEffect from "./components/DemoUseEffect/DemoUseEffect";
 import DemoUseEffectDetail from "./components/DemoUseEffect/DemoUseEffectDetail";
 import React, { createContext } from "react";
+import DemoUseSearchParam from "./components/DemoUseSearchParam/DemoUseSearchParam";
+import DemoUseRef from "./components/DemoUseRef/DemoUseRef";
+import DemoUseMemo from "./components/DemoUseMemoAndCallBack/DemoUseMemo";
+import DemoUseCallBack from "./components/DemoUseMemoAndCallBack/DemoUseCallBack";
 
 export let ContextHoTen = createContext(null);
 
@@ -64,6 +68,22 @@ function App() {
         {
           path: "demo-detail-use-effect/:id",
           element: <DemoUseEffectDetail />,
+        },
+        {
+          path: "demo-use-search-param",
+          element: <DemoUseSearchParam />,
+        },
+        {
+          path: "demo-use-ref",
+          element: <DemoUseRef />,
+        },
+        {
+          path: "demo-use-memo",
+          element: <DemoUseMemo />,
+        },
+        {
+          path: "demo-use-callback",
+          element: <DemoUseCallBack />,
         },
       ],
     },
