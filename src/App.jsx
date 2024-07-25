@@ -23,6 +23,7 @@ import DemoUseSearchParam from "./components/DemoUseSearchParam/DemoUseSearchPar
 import DemoUseRef from "./components/DemoUseRef/DemoUseRef";
 import DemoUseMemo from "./components/DemoUseMemoAndCallBack/DemoUseMemo";
 import DemoUseCallBack from "./components/DemoUseMemoAndCallBack/DemoUseCallBack";
+import DemoFormReact from "./components/DemoFormReact/DemoFormReact";
 
 export let ContextHoTen = createContext(null);
 
@@ -84,6 +85,10 @@ function App() {
         {
           path: "demo-use-callback",
           element: <DemoUseCallBack />,
+        },
+        {
+          path: "demo-form-react",
+          element: <DemoFormReact />,
         },
       ],
     },
